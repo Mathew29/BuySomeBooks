@@ -12,3 +12,8 @@
     "logo search signin"
     "nav nav nav";
 }
+
+.signin {
+    background-color: aliceblue;
+    justify-self: flex-end;
+}
