@@ -2,12 +2,13 @@ import React from "react";
 import Head from "next/head";
 import Header from "../Header/Header";
 import styles from "./Layout.module.css";
+import Cards from '../Cards/Cards';
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Games4Everyone</title>
+        <title>Buy Some Books</title>
       </Head>
       {/* <div className={styles.logo}>
         <h1>logo</h1>
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
       </div>
 
       <div className={styles.main}>
-        <main>{children}</main>
+        <main><Cards /></main>
       </div>
 
       <div className={styles.aside}>
