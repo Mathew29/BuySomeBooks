@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card/Card";
+import Auxiliary from '../../hoc/Auxiliary/Auxiliary'
 
 const Cards = () => {
   const [books, setBooks] = useState([]);
@@ -20,7 +21,7 @@ const Cards = () => {
   };
 
   return (
-    <div>
+    <Auxiliary>
         {books.map((book, id) => {
             const {title, author, genre, description, image, isbn, published, publisher } = book
 
@@ -28,7 +29,7 @@ const Cards = () => {
                 <Card key={id} title={title} author={author} genre={genre} description={description} image={image} isbn={isbn} published={published} publisher={publisher} />
             )
         })}
-    </div>
+    </Auxiliary>
   );
 };
 
