@@ -1,21 +1,35 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from "react";
+import Card from "./Card/Card";
 
-const Card = () => {
-    const [bookApi, setBookApi] = useState(initialState)
+const Cards = () => {
+  const [books, setBooks] = useState([]);
 
-    useEffect(() => {
-        FakerApi()
-    }, [])
+  useEffect(() => {
+    FakerApi();
+  }, []);
 
-    const FakerApi = () => {
-        fetch('https://fakerapi.it/api/v1/books?_quantity=20').then(response => response.json())
-        .then(data => console.log(data.data));
-    }
+  const FakerApi = async () => {
+    await fetch("https://fakerapi.it/api/v1/books?_quantity=100")
+      .then((response) => response.json())
+      .then((data) => {
+          let bookInfo = data.data
+          console.log(bookInfo)
+        setBooks(bookInfo);
+        console.log('books ', books);
+      });
+  };
 
+  return (
+    <div>
+        {books.map((book, id) => {
+            const {title, author, genre, description, image, isbn, published, publisher } = book
 
-    return (
-        <div></div>
-    )
-}
+            return (
+                <Card key={id} title={title} author={author} genre={genre} description={description} image={image} isbn={isbn} published={published} publisher={publisher} />
+            )
+        })}
+    </div>
+  );
+};
 
-export default Card;
+export default Cards;
