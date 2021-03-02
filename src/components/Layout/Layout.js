@@ -7,9 +7,6 @@ import Cards from '../Cards/Cards';
 const Layout = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Buy Some Books</title>
-      </Head>
       {/* <div className={styles.logo}>
         <h1>logo</h1>
       </div> */}
