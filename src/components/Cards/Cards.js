@@ -10,7 +10,7 @@ const Cards = () => {
   }, []);
 
   const FakerApi = async () => {
-    await fetch("https://fakerapi.it/api/v1/books?_quantity=100")
+    await fetch("https://fakerapi.it/api/v1/books?_quantity=10")
       .then((response) => response.json())
       .then((data) => {
           let bookInfo = data.data
