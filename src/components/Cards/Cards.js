@@ -21,7 +21,7 @@ const Cards = () => {
       "grayscale",
       "sepia",
     ];
-    await fetch("https://fakerapi.it/api/v1/books?_quantity=1")
+    await fetch("https://fakerapi.it/api/v1/books?_quantity=8")
       .then((response) => response.json())
       .then((data) => {
         if (data) {
