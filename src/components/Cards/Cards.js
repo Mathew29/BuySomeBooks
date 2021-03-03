@@ -21,7 +21,7 @@ const Cards = () => {
       "grayscale",
       "sepia",
     ];
-    await fetch("https://fakerapi.it/api/v1/books?_quantity=8")
+    await fetch("https://fakerapi.it/api/v1/books?_quantity=20")
       .then((response) => response.json())
       .then((data) => {
         if (data) {
@@ -29,7 +29,7 @@ const Cards = () => {
           bookInfo.map((book, id) => {
             // Change image size and randomize the image
             let num = Math.floor(Math.random() * 6);
-            book.image = "http://placeimg.com/169/220/" + imageTypeArr[num];
+            book.image = "http://placeimg.com/170/220/" + imageTypeArr[num];
           });
           setBooks(bookInfo);
         }
