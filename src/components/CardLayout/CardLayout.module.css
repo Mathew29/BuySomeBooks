@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "main";
+    width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: blue;
+    list-style: none;
+}
