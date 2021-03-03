@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../Header/Header";
 import styles from "./Layout.module.css";
-import Cards from '../Cards/Cards';
+import CardLayout from '../CardLayout/CardLayout';
 
 const Layout = () => {
   return (
@@ -19,7 +19,7 @@ const Layout = () => {
       </div>
 
       <div className={styles.main}>
-        <main><Cards /></main>
+        <CardLayout />
       </div>
 
       <div className={styles.aside}>
