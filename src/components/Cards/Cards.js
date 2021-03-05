@@ -29,7 +29,7 @@ const Cards = () => {
           bookInfo.map((book, id) => {
             // Change image size and randomize the image
             let num = Math.floor(Math.random() * 6);
-            book.image = "http://placeimg.com/170/220/" + imageTypeArr[num];
+            book.image = "http://placeimg.com/220/220/" + imageTypeArr[num];
           });
           setBooks(bookInfo);
         }
@@ -51,9 +51,8 @@ const Cards = () => {
         } = book;
 
         return (
-          <li className={styles.Container}>
+          <li key={id} className={styles.Container}>
             <Card
-              key={id}
               title={title}
               author={author}
               genre={genre}
