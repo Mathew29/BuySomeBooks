@@ -1,11 +1,22 @@
-
+.Body {
+    font-size: 12px;
+    text-align: center;
+}
 .Title {
+    font-weight: bold;
     overflow: auto;
-    font-size: 16px;
 }
 
 .Image {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
+}
+
+.Price {
+    font-weight: bold;;
+}
+
+.Author {
+
 }
