@@ -16,7 +16,6 @@ const Card = (props) => {
                 <h3 className={styles.Title}>{props.title}</h3>
                 <p className={styles.Author}>By: {props.author}</p>
                 <p className={styles.Price}>$35</p>
-                {/* <p className={styles.Genre}>{props.genre}</p> */}
                 {/* <p className={styles.Description}>{props.description}</p> */}
             </div>
 
