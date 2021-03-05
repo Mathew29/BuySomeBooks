@@ -13,11 +13,11 @@ const Card = (props) => {
                 <img src={props.image} />
             </div>
             <div className={styles.Body}>
-                <h3 className={styles.Title}>title {props.title}</h3>
-                <p className={styles.Price}>price</p>
+                <h3 className={styles.Title}>{props.title}</h3>
+                <p className={styles.Author}>By: {props.author}</p>
+                <p className={styles.Price}>$35</p>
+                {/* <p className={styles.Genre}>{props.genre}</p> */}
                 {/* <p className={styles.Description}>{props.description}</p> */}
-                {/* <p className={styles.Author}>{props.author}</p>
-                <p className={styles.Genre}>{props.genre}</p> */}
             </div>
 
         </Auxiliary>
