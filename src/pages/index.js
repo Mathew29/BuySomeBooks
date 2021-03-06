@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/Layout/Layout";
+import HomeLayout from "../components/HomeLayout/HomeLayout";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Buy Some Books</title>
       </Head>
-      <Layout />
+      <HomeLayout />
     </div>
   );
 }
