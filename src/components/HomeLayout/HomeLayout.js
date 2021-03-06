@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import styles from "./Layout.module.css";
 import CardLayout from '../CardLayout/CardLayout';
 
-const Layout = () => {
+const HomeLayout = () => {
   return (
     <div className={styles.container}>
       {/* <div className={styles.logo}>
@@ -33,4 +33,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default HomeLayout;
