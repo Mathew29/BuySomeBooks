@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import styles from "./Cards.module.css";
-import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
+import Auxiliary from "../../../hoc/Auxiliary/Auxiliary";
 
 const Cards = () => {
   const [books, setBooks] = useState([]);

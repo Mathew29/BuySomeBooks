@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import styles from "./Layout.module.css";
+import styles from "./HomeLayout.module.css";
 import CardLayout from "../CardLayout/CardLayout";
 
 const HomeLayout = () => {
