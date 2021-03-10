@@ -9,25 +9,25 @@ const HomeLayout = () => {
       {/* <div className={styles.logo}>
         <h1>logo</h1>
       </div> */}
-      <div className={styles.header}>
+      <section className={styles.header}>
         <Header />
-      </div>
+      </section>
 
-      <div className={styles.nav}>
+      <section className={styles.nav}>
         <nav>nav</nav>
-      </div>
+      </section>
 
-      <div className={styles.main}>
+      <section className={styles.main}>
         <CardLayout />
-      </div>
+      </section>
 
-      <div className={styles.aside}>
+      <section className={styles.aside}>
         <aside>aside</aside>
-      </div>
+      </section>
 
-      <div className={styles.footer}>
+      <section className={styles.footer}>
         <footer>footer</footer>
-      </div>
+      </section>
     </div>
   );
 };
