@@ -1,8 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import Header from "../Header/Header";
 import styles from "./Layout.module.css";
-import CardLayout from '../CardLayout/CardLayout';
+import CardLayout from "../CardLayout/CardLayout";
 
 const HomeLayout = () => {
   return (
