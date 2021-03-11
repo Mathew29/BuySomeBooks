@@ -51,7 +51,11 @@ const Cards = () => {
         } = book;
 
         return (
-          <li key={id} className={styles.Container}>
+          <li
+            key={id}
+            className={styles.Container}
+            onClick={() => console.log("clicked ", id)}
+          >
             <Card
               title={title}
               author={author}
