@@ -1,12 +1,11 @@
 .container {
-    display: grid;
-    gap: 20px;
-    grid-template-areas: "main";
-    width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "main";
+  width: 100%;
 }
 
 .main {
-    grid-area: main;
-    background-color: blue;
-    list-style: none;
+  grid-area: main;
+  list-style: none;
 }
